@@ -11373,6 +11373,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6252878255685485995, guid: c00453d02671c6f43b5622ecaaee3894, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
     - target: {fileID: 6252878255685485998, guid: c00453d02671c6f43b5622ecaaee3894, type: 3}
       propertyPath: m_Name
       value: Enemy

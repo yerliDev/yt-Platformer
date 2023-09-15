@@ -14,6 +14,8 @@ public class enemyScript : MonoBehaviour
 
     [SerializeField] public float moveSpeed;
 
+    [SerializeField] public GameObject bloodParticle;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -33,6 +35,9 @@ public class enemyScript : MonoBehaviour
         if (collision.gameObject.tag == "Sword")
         {
             updateHealth(damage);
+            Vector2 collisionPoint = collision.transform.position;
+            GameObject blood = Instantiate(bloodParticle, collisionPoint-new Vector2(-1,0), Quaternion.identity);
+            Destroy(blood, 2f);
         }
     }
    
