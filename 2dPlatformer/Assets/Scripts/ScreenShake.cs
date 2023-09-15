@@ -6,8 +6,7 @@ public class ScreenShake : MonoBehaviour
 {
     public bool isShaking = false;
     public float duration = 1f;
-    public AnimationCurve animationCurve;
-
+    public float strength;
     private void FixedUpdate()
     {
         if (isShaking)
@@ -25,7 +24,6 @@ public class ScreenShake : MonoBehaviour
         while (elapsedTime < duration)
         {
             elapsedTime += Time.smoothDeltaTime;
-            float strength = animationCurve.Evaluate(elapsedTime / duration);
             transform.position = new Vector3(startPos.x + Random.insideUnitSphere.x * strength,
                 startPos.y + Random.insideUnitSphere.y * strength, transform.position.z);
             yield return null;

@@ -16,11 +16,20 @@ public class enemyScript : MonoBehaviour
 
     [SerializeField] public GameObject bloodParticle;
 
+    private GameObject mainCamera;
+    private ScreenShake screenShakeScript;
+
     void Start()
     {
+
+        mainCamera = GameObject.Find("Main Camera");
+        screenShakeScript = mainCamera.GetComponent<ScreenShake>();
+
+
         currentHealth = maxHealth;
         Player = GameObject.Find("Player_SwordMan");
         swordmanScript = Player.GetComponent<Swordman>();
+
 
         moveSpeed = 0.01f;
     }
@@ -37,7 +46,7 @@ public class enemyScript : MonoBehaviour
             updateHealth(damage);
             Vector2 collisionPoint = collision.transform.position;
             GameObject blood = Instantiate(bloodParticle, collisionPoint-new Vector2(-1,0), Quaternion.identity);
-            Destroy(blood, 2f);
+            Destroy(blood, 1f);
         }
     }
    
@@ -50,6 +59,7 @@ public class enemyScript : MonoBehaviour
         healthBar.value = currentHealth / maxHealth;
         if(currentHealth<=0)
         {
+            screenShakeScript.isShaking = true;
             Destroy(this.gameObject);
         }
     }
