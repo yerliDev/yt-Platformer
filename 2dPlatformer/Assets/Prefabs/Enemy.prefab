@@ -442,6 +442,7 @@ MonoBehaviour:
   healthBar: {fileID: 6252878255851952449}
   moveSpeed: 0
   bloodParticle: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
+  damageText: {fileID: 4124359283193731854, guid: 245034535f8a7b945ad150c65187caeb, type: 3}
 --- !u!1 &6252878255851952455
 GameObject:
   m_ObjectHideFlags: 0

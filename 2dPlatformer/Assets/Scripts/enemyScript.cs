@@ -19,6 +19,8 @@ public class enemyScript : MonoBehaviour
     private GameObject mainCamera;
     private ScreenShake screenShakeScript;
 
+    [SerializeField] public GameObject damageText;
+
     void Start()
     {
 
@@ -43,7 +45,7 @@ public class enemyScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Sword")
         {
-            updateHealth(damage);
+            updateHealth();
             Vector2 collisionPoint = collision.transform.position;
             GameObject blood = Instantiate(bloodParticle, collisionPoint-new Vector2(-1,0), Quaternion.identity);
             Destroy(blood, 1f);
@@ -52,12 +54,14 @@ public class enemyScript : MonoBehaviour
    
 
 
-    private void updateHealth(float damageTaken)
+    private void updateHealth( )
     {
         damage = swordmanScript.Damage;
         currentHealth -= damage;
         healthBar.value = currentHealth / maxHealth;
-        if(currentHealth<=0)
+        GameObject damageTextPop = Instantiate(damageText,transform.position + new Vector3(0,1.3f,0),Quaternion.identity);
+        Destroy(damageTextPop,0.22f);
+        if (currentHealth<=0)
         {
             screenShakeScript.isShaking = true;
             Destroy(this.gameObject);

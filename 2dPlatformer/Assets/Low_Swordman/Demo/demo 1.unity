@@ -11345,6 +11345,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6252878255092970304, guid: c00453d02671c6f43b5622ecaaee3894, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6252878255685485992, guid: c00453d02671c6f43b5622ecaaee3894, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -11389,6 +11393,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6252878255685485995, guid: c00453d02671c6f43b5622ecaaee3894, type: 3}
+      propertyPath: damageText
+      value: 
+      objectReference: {fileID: 4124359283193731854, guid: 245034535f8a7b945ad150c65187caeb, type: 3}
     - target: {fileID: 6252878255685485995, guid: c00453d02671c6f43b5622ecaaee3894, type: 3}
       propertyPath: bloodParticle
       value: 
