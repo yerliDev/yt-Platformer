@@ -20,6 +20,8 @@ public class enemyScript : MonoBehaviour
     private ScreenShake screenShakeScript;
 
     [SerializeField] public GameObject damageText;
+    [SerializeField] public GameObject audioDeath;
+    [SerializeField] public GameObject audioHurt;
 
     void Start()
     {
@@ -63,8 +65,13 @@ public class enemyScript : MonoBehaviour
         Destroy(damageTextPop,0.22f);
         if (currentHealth<=0)
         {
+           Instantiate(audioDeath, transform.position , Quaternion.identity);
             screenShakeScript.isShaking = true;
             Destroy(this.gameObject);
+        }
+        else
+        {
+            Instantiate(audioHurt, transform.position, Quaternion.identity);
         }
     }
 }

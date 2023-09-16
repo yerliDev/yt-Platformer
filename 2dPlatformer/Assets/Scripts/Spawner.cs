@@ -26,5 +26,11 @@ public class Spawner : MonoBehaviour
         Instantiate(enemyPrefab, enemySpawnPoint.position, Quaternion.identity);
     }
 
+    public void destroyYourself(GameObject toDestroy,float time)
+    {
+        Destroy(toDestroy, time);
+
+    }
+
     
 }
