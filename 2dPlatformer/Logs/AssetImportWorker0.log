@@ -1357,3 +1357,15 @@ Received Import Request.
   path: Assets/Prefabs/Enemy.prefab
   artifactKey: Guid(c00453d02671c6f43b5622ecaaee3894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Enemy.prefab using Guid(c00453d02671c6f43b5622ecaaee3894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c0e1b6701952a1735af3a3e102f2f1') in 0.020098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 592.763971 seconds.
+  path: Assets/Low_Swordman/Demo/Scripts
+  artifactKey: Guid(58eb2bc0e6027814bb265563e29faee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Swordman/Demo/Scripts using Guid(58eb2bc0e6027814bb265563e29faee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db29ee680764b0a6c028e793398fdba4') in 0.023362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.486754 seconds.
+  path: Assets/GitTry
+  artifactKey: Guid(9e9d1a955ea030f42b9d5a98c151e177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GitTry using Guid(9e9d1a955ea030f42b9d5a98c151e177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722147a36fe8fbb53c6c0c75ab38a2b1') in 0.011693 seconds 
