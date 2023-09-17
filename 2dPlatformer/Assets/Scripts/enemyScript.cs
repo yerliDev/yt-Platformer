@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class enemyScript : MonoBehaviour
 {
@@ -61,8 +62,9 @@ public class enemyScript : MonoBehaviour
         damage = swordmanScript.Damage;
         currentHealth -= damage;
         healthBar.value = currentHealth / maxHealth;
-        GameObject damageTextPop = Instantiate(damageText,transform.position + new Vector3(0,1.3f,0),Quaternion.identity);
-        Destroy(damageTextPop,0.22f);
+        GameObject damageTextPop = Instantiate(damageText,transform.position + new Vector3(-1,1.3f,0),Quaternion.identity);
+        damageTextPop.GetComponent<TextMeshPro>().text = damage.ToString();
+        Destroy(damageTextPop,0.35f);
         if (currentHealth<=0)
         {
            Instantiate(audioDeath, transform.position , Quaternion.identity);
