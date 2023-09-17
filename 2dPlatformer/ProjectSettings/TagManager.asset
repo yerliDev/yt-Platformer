@@ -16,8 +16,8 @@ TagManager:
   - UI
   - Ground
   - 
-  - 
-  - 
+  - CharacterStuff
+  - Particles
   - 
   - 
   - 
@@ -46,4 +46,10 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3521420631
+    locked: 0
+  - name: Particles
+    uniqueID: 521753845
+    locked: 0
+  - name: CharacterStuff
+    uniqueID: 516475445
     locked: 0
